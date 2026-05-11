@@ -23,8 +23,9 @@ if (form && formStatus) {
       return;
     }
 
-    if (phone && !/^[0-9()\-\s+]{10,}$/.test(phone)) {
-      formStatus.textContent = 'Phone number should contain at least 10 valid characters.';
+    const digitCount = phone.replace(/\D/g, '').length;
+    if (phone && (!/^[0-9()\-\s+]{10,}$/.test(phone) || digitCount < 10)) {
+      formStatus.textContent = 'Phone number should include at least 10 digits.';
       formStatus.classList.add('error');
       return;
     }

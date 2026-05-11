@@ -28,7 +28,7 @@ if (lightbox && lightboxImage && lightboxClose) {
   });
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && lightbox.classList.contains('open')) {
       closeLightbox();
     }
   });

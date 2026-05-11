@@ -16,6 +16,7 @@ if (lightbox && lightboxImage && lightboxClose) {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
     lightboxImage.src = '';
+    lightboxImage.alt = '';
   };
 
   lightboxClose.addEventListener('click', closeLightbox);

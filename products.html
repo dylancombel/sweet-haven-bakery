@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Sweet Haven Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Sweet Haven Bakery</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Bakery Menu</h1>
+      <p>Explore our daily selection of artisan breads, pastries, cakes, and treats.</p>
+      <div class="filters" role="group" aria-label="Filter products by category">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="bread">Bread</button>
+        <button class="filter-btn" data-filter="pastry">Pastries</button>
+        <button class="filter-btn" data-filter="cake">Cakes</button>
+        <button class="filter-btn" data-filter="cookie">Cookies</button>
+      </div>
+      <div class="card-grid product-grid">
+        <article class="card product-card" data-category="bread"><img src="assets/images/product-sourdough.svg" alt="Sourdough loaf"><h2>Sourdough Loaf</h2><p>Classic naturally leavened bread.</p><strong>$8.50</strong></article>
+        <article class="card product-card" data-category="bread"><img src="assets/images/product-baguette.svg" alt="Artisan baguette"><h2>Artisan Baguette</h2><p>Crunchy crust with airy crumb.</p><strong>$5.00</strong></article>
+        <article class="card product-card" data-category="pastry"><img src="assets/images/product-croissant.svg" alt="Butter croissant"><h2>Butter Croissant</h2><p>Flaky and buttery layers.</p><strong>$4.25</strong></article>
+        <article class="card product-card" data-category="pastry"><img src="assets/images/product-donut.svg" alt="Glazed donut"><h2>Honey Glazed Donut</h2><p>Soft yeast donut with vanilla glaze.</p><strong>$3.50</strong></article>
+        <article class="card product-card" data-category="cake"><img src="assets/images/product-wedding-cake.svg" alt="Wedding cake"><h2>Wedding Cake</h2><p>Custom tiered cake for special days.</p><strong>From $180</strong></article>
+        <article class="card product-card" data-category="cake"><img src="assets/images/product-cupcake.svg" alt="Cupcake"><h2>Cupcake Box</h2><p>Half-dozen seasonal cupcakes.</p><strong>$22.00</strong></article>
+        <article class="card product-card" data-category="cookie"><img src="assets/images/product-cookie.svg" alt="Chocolate chip cookies"><h2>Chocolate Chip Cookies</h2><p>Organic brown butter cookie.</p><strong>$2.75</strong></article>
+        <article class="card product-card" data-category="cookie"><img src="assets/images/product-cookie.svg" alt="Oatmeal raisin cookies"><h2>Oatmeal Raisin Cookies</h2><p>Classic cinnamon-spiced favorite.</p><strong>$2.50</strong></article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sweet Haven Bakery</h3>
+        <p>123 Maple Street, Portland, Oregon 97210</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul><li><a href="#" aria-label="Instagram">Instagram</a></li><li><a href="#" aria-label="Facebook">Facebook</a></li><li><a href="#" aria-label="Pinterest">Pinterest</a></li></ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Sweet Haven Bakery. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

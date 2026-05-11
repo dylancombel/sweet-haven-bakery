@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Pastry Display">
+  <rect width="1200" height="800" fill="#f6ecde"/>
+  <circle cx="980" cy="120" r="180" fill="#ecd1a8" opacity="0.55"/>
+  <rect x="110" y="150" width="980" height="500" rx="32" fill="#9f6638" opacity="0.85"/>
+  <text x="600" y="390" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700">Sweet Haven Bakery</text>
+  <text x="600" y="460" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="34">Pastry Display</text>
+</svg>

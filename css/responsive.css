@@ -1,2 +1,39 @@
-@media (max-width:900px){.card-grid,.gallery-grid,.footer-grid,.hero-grid,.two-col{grid-template-columns:1fr 1fr}}
-@media (max-width:720px){.nav-toggle{display:inline-block}.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff9ef;flex-direction:column;padding:.8rem 4%;border-bottom:1px solid #eadbc7}.nav-links.open{display:flex}.hero-grid,.two-col,.card-grid,.gallery-grid,.footer-grid{grid-template-columns:1fr}}
+@media (max-width: 900px) {
+  .card-grid,
+  .gallery-grid,
+  .footer-grid,
+  .hero-grid,
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff9ef;
+    flex-direction: column;
+    padding: 0.8rem 4%;
+    border-bottom: 1px solid #eadbc7;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hero-grid,
+  .two-col,
+  .card-grid,
+  .gallery-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

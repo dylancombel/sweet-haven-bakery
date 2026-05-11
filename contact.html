@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sweet Haven Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Sweet Haven Bakery</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container two-col">
+      <section>
+        <h1>Contact Us</h1>
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" required minlength="2">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" pattern="[0-9()\-\\s+]{10,}">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required minlength="10"></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+      <aside>
+        <h2>Visit Sweet Haven Bakery</h2>
+        <p><strong>Address:</strong> 123 Maple Street, Portland, Oregon 97210</p>
+        <p><strong>Phone:</strong> (503) 555-0147</p>
+        <p><strong>Email:</strong> hello@sweethavenbakery.com</p>
+        <p><strong>Hours:</strong><br>Mon-Fri 7am-6pm<br>Sat 8am-5pm<br>Sun 9am-4pm</p>
+        <iframe title="Map to Sweet Haven Bakery" src="https://maps.google.com/maps?q=123%20Maple%20Street%20Portland%20Oregon%2097210&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Sweet Haven Bakery</h3>
+        <p>123 Maple Street, Portland, Oregon 97210</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul><li><a href="products.html">Products</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="blog.html">Blog</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul><li><a href="#" aria-label="Instagram">Instagram</a></li><li><a href="#" aria-label="Facebook">Facebook</a></li><li><a href="#" aria-label="Pinterest">Pinterest</a></li></ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Sweet Haven Bakery. All rights reserved.</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
